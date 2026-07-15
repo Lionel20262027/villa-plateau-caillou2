@@ -2,53 +2,61 @@
 
 ![Villa Plateau Caillou](https://raw.githubusercontent.com/Lionel20262027/villa-plateau-caillou2/main/images/hero.jpg)
 
-**Villa de standing avec piscine et vue mer à La Réunion**
+**Villa en colocation à Plateau Caillou - Saint-Paul, La Réunion**
 
-Site vitrine moderne pour une  villa située à **Plateau Caillou** (Saint-Paul), à l'ouest de l'île de La Réunion.
+Site officiel de la villa située à Plateau Caillou, gérée par le propriétaire.
 
-## 🌟 Présentation
+## 🏠 À propos de la villa
 
-Magnifique villa entièrement équipée, idéale pour coliving.  
-Profitez d’une **piscine privée**, d’une **vue exceptionnelle sur l’océan** et d’un cadre calme et reposant.
+Grande villa moderne située sur les hauteurs de **Plateau Caillou** (Saint-Paul), idéale pour de la **colocation** calme et sérieuse.
 
-### Caractéristiques principales
+La maison offre un cadre agréable, spacieux et bien équipé, parfait pour des colocataires indépendants, étudiants ou professionnels.
+
+### Caractéristiques
 - 🏊 Piscine privée
-- 🌅 Vue mer panoramique
-- 🛏 3 chambres (1 personne par chambre, 2ieme personnne en option)
-- ❄️ Climatisation dans toutes les chambres
+- 🌅 Belle vue sur l’océan
+- 🛏 3 chambres individuelles
+- Espace de vie commun (séjour + cuisine)
+- ❄️ Climatisation dans les chambres
 - 📶 Fibre internet haut débit
-- 🍳 Cuisine entièrement équipée
-- 🚗 Parking privé + Jardin tropical
+- 🚗 Parking privé
+- 🌴 Jardin
+- 🧺 Lave-linge + équipements modernes
 
-## 📸 Galerie
+## 👥 Colocation
 
-*(Les photos sont affichées directement sur le site)*
+- **3 chambres** disponibles en colocation
+- Colocataires recherchés : **sérieux, propres et respectueux**
+- Environnement calme, idéal pour travailler ou étudier
+- Charges incluses ou à définir selon les accords
 
-## 🛠 Technologies utilisées
+## 📍 Situation
 
-- **HTML5**
-- **CSS3** (design moderne et responsive)
-- **JavaScript** (galerie interactive, navigation, lightbox)
-- **Google Fonts** (Poppins)
+- Quartier calme de Plateau Caillou
+- Proche des axes principaux (Saint-Paul, Saint-Gilles, Le Tampon)
+- Commerces et transports à proximité
 
-## 🚀 Voir le site
+## Contact
 
-[**Visiter le site →**](https://lionel20262027.github.io/villa-plateau-caillou2/)
+**Propriétaire :** Lionel  
+** WhatsApp :** 033 06 71 57 20 08 
+**Email :** pour contractualiser, à obtenir via whatsapp
 
-*(Une fois que tu auras activé GitHub Pages)*
-
-## 📍 Localisation
-
-Plateau Caillou, Saint-Paul, La Réunion  
-Proche des plages de l’Ouest (Saint-Gilles, Boucan Canot, etc.)
-
-## Contact & Réservation
-
-- **WhatsApp** : +33 6 71 57 20 08
+Pour toute candidature en colocation, merci de me contacter avec :
+- Une présentation rapide
+- Votre situation (étudiant, professionnel…)
+- Vos dates souhaitées
 
 ---
 
-## Pour les développeurs
+## 🛠 Technologies du site
+
+- HTML5
+- CSS3
+- JavaScript Vanilla
+- Design responsive
+
+### Structure du projet
 
 ### Structure du projet
 
