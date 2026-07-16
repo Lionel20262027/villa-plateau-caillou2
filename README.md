@@ -47,7 +47,16 @@ Pour toute candidature en colocation, merci de me contacter avec :
 - Votre situation (étudiant, professionnel…)
 - Vos dates souhaitées
 
+## Voir le site
+
+[**Visiter le site →**](https://lionel20262027.github.io/villa-plateau-caillou2/)
+
+*(Active GitHub Pages dans les paramètres du dépôt pour que le lien fonctionne)*
+
 ---
+
+**Villa gérée directement par le propriétaire**  
+© 2026 - Plateau Caillou, La Réunion
 
 ## 🛠 Technologies du site
 
