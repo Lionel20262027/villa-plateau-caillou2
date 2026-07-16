@@ -3,286 +3,92 @@
    gallery.js
 ========================================================== */
 
-const gallery = [
+const GALLERY = {
 
-/* ==========================================================
-   HERO
-========================================================== */
+    hero : [
+        "images/hero/001.jpg"
+    ],
 
-{
-    image:"images/hero.jpg",
-    title:"Villa Plateau Caillou",
-    category:"hero",
-    featured:true
-},
+    piscine : [
+        "images/piscine/001.jpg",
+        "images/piscine/002.jpg",
+        "images/piscine/003.jpg",
+        "images/piscine/004.jpg",
+        "images/piscine/005.jpg",
+        "images/piscine/006.jpg"
+    ],
 
-/* ==========================================================
-   PISCINE
-========================================================== */
+    terrasse : [
+        "images/terrasse/001.jpg",
+        "images/terrasse/002.jpg"
+    ],
 
-{
-    image:"images/piscine1.jpg",
-    title:"Piscine",
-    category:"Piscine",
-    featured:true
-},
+    salon : [
+        "images/salon/001.jpg",
+        "images/salon/002.jpg"
+    ],
 
-{
-    image:"images/piscine2.jpg",
-    title:"Piscine",
-    category:"Piscine",
-    featured:true
-},
+    cuisine : [
+        "images/cuisine/001.jpg"
+    ],
 
-{
-    image:"images/piscine3.jpg",
-    title:"Piscine de nuit",
-    category:"Piscine"
-},
+    chambre1 : [
+        "images/chambre1/001.jpg",
+        "images/chambre1/002.jpg",
+        "images/chambre1/003.jpg",
+        "images/chambre1/004.jpg"
+    ],
 
-/* ==========================================================
-   TERRASSE
-========================================================== */
+    chambre2 : [
+        "images/chambre2/001.jpg",
+        "images/chambre2/002.jpg",
+        "images/chambre2/003.jpg"
+    ],
 
-{
-    image:"images/terrasse1.jpg",
-    title:"Terrasse",
-    category:"Terrasse",
-    featured:true
-},
+    chambre3 : [
+        "images/chambre3/001.jpg",
+        "images/chambre3/002.jpg",
+        "images/chambre3/003.jpg",
+        "images/chambre3/004.jpg"
+    ],
 
-{
-    image:"images/terrasse2.jpg",
-    title:"Terrasse",
-    category:"Terrasse"
-},
+    jardin : [
+        "images/jardin/001.jpg",
+        "images/jardin/002.jpg",
+        "images/jardin/003.jpg",
+        "images/jardin/004.jpg",
+        "images/jardin/005.jpg",
+        "images/jardin/006.jpg"
+    ],
 
-/* ==========================================================
-   SALON
-========================================================== */
+    vue : [
+        "images/vue/001.jpg",
+        "images/vue/002.jpg",
+        "images/vue/003.jpg",
+        "images/vue/004.jpg",
+        "images/vue/005.jpg"
+    ]
 
-{
-    image:"images/salon.jpg",
-    title:"Salon",
-    category:"Salon"
-},
-
-/* ==========================================================
-   CUISINE
-========================================================== */
-
-{
-    image:"images/cuisine.jpg",
-    title:"Cuisine équipée",
-    category:"Cuisine"
-},
-
-/* ==========================================================
-   CHAMBRES
-========================================================== */
-
-{
-    image:"images/chambre1.jpg",
-    title:"Suite parentale",
-    category:"Chambre"
-},
-
-{
-    image:"images/chambre2.jpg",
-    title:"Chambre 2",
-    category:"Chambre"
-},
-
-{
-    image:"images/chambre3.jpg",
-    title:"Chambre 3",
-    category:"Chambre"
-},
-
-/* ==========================================================
-   JARDIN
-========================================================== */
-
-{
-    image:"images/jardin1.jpg",
-    title:"Jardin",
-    category:"Jardin"
-},
-
-{
-    image:"images/jardin2.jpg",
-    title:"Jardin tropical",
-    category:"Jardin"
-},
-
-/* ==========================================================
-   VUE MER
-========================================================== */
-
-{
-    image:"images/vue1.jpg",
-    title:"Vue Océan",
-    category:"Vue",
-    featured:true
-},
-
-{
-    image:"images/vue2.jpg",
-    title:"Coucher de soleil",
-    category:"Vue"
-}
-
-];
+};
 
 
 /* ==========================================================
-   Génération de la galerie
+   Liste complète de toutes les photos
 ========================================================== */
 
-const galleryGrid = document.getElementById("galleryGrid");
+const ALL_PHOTOS = [];
 
-gallery.forEach((photo,index)=>{
+Object.entries(GALLERY).forEach(([category, photos]) => {
 
-    const card=document.createElement("div");
+    photos.forEach(photo => {
 
-    card.className="gallery-item fade";
+        ALL_PHOTOS.push({
 
-    card.dataset.index=index;
+            src: photo,
+            category: category
 
-    card.innerHTML=`
-        <img
-            src="${photo.image}"
-            alt="${photo.title}"
-            loading="lazy">
-
-        <div class="gallery-caption">
-
-            <strong>${photo.title}</strong><br>
-
-            ${photo.category}
-
-        </div>
-    `;
-
-    card.addEventListener("click",()=>{
-
-        openLightbox(index);
+        });
 
     });
 
-    galleryGrid.appendChild(card);
-
 });
-
-
-/* ==========================================================
-   Lightbox
-========================================================== */
-
-let currentIndex=0;
-
-const lightbox=document.getElementById("lightbox");
-const lightboxImage=document.getElementById("lightboxImage");
-
-function openLightbox(index){
-
-    currentIndex=index;
-
-    lightbox.classList.add("active");
-
-    updateLightbox();
-
-}
-
-function updateLightbox(){
-
-    lightboxImage.src=gallery[currentIndex].image;
-
-    lightboxImage.alt=gallery[currentIndex].title;
-
-}
-
-function nextImage(){
-
-    currentIndex++;
-
-    if(currentIndex>=gallery.length)
-        currentIndex=0;
-
-    updateLightbox();
-
-}
-
-function previousImage(){
-
-    currentIndex--;
-
-    if(currentIndex<0)
-        currentIndex=gallery.length-1;
-
-    updateLightbox();
-
-}
-
-
-/* ==========================================================
-   Boutons
-========================================================== */
-
-document.querySelector(".next")
-.addEventListener("click",nextImage);
-
-document.querySelector(".previous")
-.addEventListener("click",previousImage);
-
-document.querySelector(".close")
-.addEventListener("click",()=>{
-
-    lightbox.classList.remove("active");
-
-});
-
-
-/* ==========================================================
-   Clavier
-========================================================== */
-
-document.addEventListener("keydown",(e)=>{
-
-    if(!lightbox.classList.contains("active"))
-        return;
-
-    switch(e.key){
-
-        case "ArrowRight":
-            nextImage();
-            break;
-
-        case "ArrowLeft":
-            previousImage();
-            break;
-
-        case "Escape":
-            lightbox.classList.remove("active");
-            break;
-
-    }
-
-});
-
-
-/* ==========================================================
-   Bouton "Voir toutes les photos"
-========================================================== */
-
-const showAll=document.getElementById("showAll");
-
-if(showAll){
-
-    showAll.addEventListener("click",()=>{
-
-        openLightbox(0);
-
-    });
-
-}
