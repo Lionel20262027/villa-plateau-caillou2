@@ -38,6 +38,14 @@ function openLightbox(src) {
     lightboxImage.src = src;
     lightbox.style.display = 'flex';
     currentImageIndex = ALL_PHOTOS.findIndex(photo => photo.src === src);
+    updateCounter();
+}
+
+function updateCounter(){
+
+    document.getElementById("lightboxCounter").textContent =
+        (currentImageIndex + 1) + " / " + ALL_PHOTOS.length;
+
 }
 
 function closeLightbox() {
@@ -47,11 +55,13 @@ function closeLightbox() {
 function showNextImage() {
     currentImageIndex = (currentImageIndex + 1) % ALL_PHOTOS.length;
     document.getElementById('lightboxImage').src = ALL_PHOTOS[currentImageIndex].src;
+    updateCounter();
 }
 
 function showPreviousImage() {
     currentImageIndex = (currentImageIndex - 1 + ALL_PHOTOS.length) % ALL_PHOTOS.length;
     document.getElementById('lightboxImage').src = ALL_PHOTOS[currentImageIndex].src;
+    updateCounter();
 }
 
 /* ==================== INITIALISATION ==================== */

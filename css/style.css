@@ -1000,9 +1000,11 @@ footer p{
 
 #lightbox img{
 
-    width:auto;
+    display:block;
 
-    height:auto;
+    width:auto !important;
+
+    height:auto !important;
 
     max-width:95vw;
 
@@ -1013,7 +1015,33 @@ footer p{
     border-radius:12px;
 
 }
+#lightboxCounter{
 
+    position:absolute;
+
+    top:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    background:rgba(0,0,0,.45);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(8px);
+
+    z-index:100000;
+
+}
 .close,
 .previous,
 .next{
