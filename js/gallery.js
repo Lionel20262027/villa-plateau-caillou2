@@ -24,11 +24,17 @@ const GALLERY = {
 const ALL_PHOTOS = [];
 
 Object.entries(GALLERY).forEach(([category, photos]) => {
-    photos.forEach(photo => {
-        ALL_PHOTOS.push({ src: photo, category: category });
-    });
-});
 
+    if (category === "hero") return;
+
+    photos.forEach(photo => {
+        ALL_PHOTOS.push({
+            src: photo,
+            category: category
+        });
+    });
+
+});
 let currentImageIndex = 0;
 
 /* ==================== LIGHTBOX ==================== */
