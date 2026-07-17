@@ -11,7 +11,7 @@ const GALLERY = {
     cuisine: ["images/cuisine/001.jpg"],
     chambre1:["images/chambre1/001.jpg", "images/chambre1/002.jpg",
               "images/chambre1/003.jpg", "images/chambre1/004.jpg"],
-    chambre2:["images/chambre2/001.jpg", "images/chambre2/002.jpg", "images/chambre2/003.jpg"],
+    chambre2:["images/chambre2/001.jpg", "images/chambre2/002.jpg"],
     chambre3:["images/chambre3/001.jpg", "images/chambre3/002.jpg",
               "images/chambre3/003.jpg", "images/chambre3/004.jpg"],
     jardin:  ["images/jardin/001.jpg", "images/jardin/002.jpg", "images/jardin/003.jpg",
