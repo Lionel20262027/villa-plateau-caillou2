@@ -5,7 +5,7 @@
 const GALLERY = {
     hero:    ["images/hero/001.jpg"],
     piscine: ["images/piscine/001.jpg", "images/piscine/002.jpg", "images/piscine/003.jpg",
-              "images/piscine/004.jpg", "images/piscine/005.jpg", "images/piscine/006.jpg"],
+              "images/piscine/004.jpg", "images/piscine/005.jpg"],
     terrasse:["images/terrasse/001.jpg", "images/terrasse/002.jpg"],
     salon:   ["images/salon/001.jpg", "images/salon/002.jpg"],
     cuisine: ["images/cuisine/001.jpg"],
