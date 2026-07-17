@@ -1000,9 +1000,15 @@ footer p{
 
 #lightbox img{
 
-    max-width:90%;
+    width:auto;
 
-    max-height:90%;
+    height:auto;
+
+    max-width:95vw;
+
+    max-height:95vh;
+
+    object-fit:contain;
 
     border-radius:12px;
 
